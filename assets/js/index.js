@@ -28,7 +28,7 @@ const arrayPrototype = {
   // Class.prototype.includes
   includes: function (arg) {
     for(let i = 0; i < this.length; i++) {
-      debugger
+      
       if (this.array[i] === arg) {
         return true;
       }
