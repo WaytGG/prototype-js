@@ -59,7 +59,7 @@ console.log(cat2.sayHi);
 
 /* 5) функция конструктор Article которая имеет свойства названия, и массив авторов, а также метод для добавления новых авторов
 this.name
-this.authors
+this.authors = []
 this.addAuthor = function*/
 
 function Article(name, authors) {
