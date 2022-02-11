@@ -65,7 +65,7 @@ this.addAuthor = function*/
 function Article(name, authors) {
   this.name = name;
   this.authors = authors;
-  this.addAuthor = function() {};
+  this.addAuthor = function() {}; //переделать. надо дабавлять в массив авторов
 }
 
 const testConst = new Article('Vanya', 'Автор');
