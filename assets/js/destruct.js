@@ -1,38 +1,5 @@
 "use strict";
 
-const user = {
-  age: 32,
-  firstname: 'Ivan',
-};
-//const age = user.age;
-//const name = user.name;
-
-const {age, firstname} = user;
-
-// console.log(age, firstname);
-
-//////////////////////////////////////
-
-const nestdObj = {
-  field: {
-    search:123,
-  }
-}
-
-//const { field } = nestdObj;
-//const { search } = field;
-
-const {field: {search}} = nestdObj;
-
-// console.log(search);
-
-////////////////////////////////////////////
-
-/* Деструктуризация 
-// const { field1Name,  field2Name } = objectVar;
-// const [ cell1, cell2 ] = arrayVar;*/
-
-
 
 /* 1) Создайте объект со структурой:
 {
