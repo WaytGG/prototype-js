@@ -81,6 +81,6 @@ testConst.addAuthor = 'AddTestAuthor';
 cat1.sayHi.call(cat2)
 почему имя в консоли не взято от cat1 а принадлежит cat2 */
 
-cat1.sayHi.call(cat2);
+cat1.sayHi.call(cat2); //В () передаем аргумент
 
 // MDN - Function.prototype.call() 
