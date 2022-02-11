@@ -22,7 +22,7 @@ const country = {
 //2) деструктуризуйте свойства countryName и helloPhrase, и за-алертите их;
 
 const {helloPhrase, countryName } = country;
-console.log(helloPhrase, countryName);
+alert(helloPhrase, countryName);
 
 
 //3) деструктуризуйте свойства population и areaSqKM,
