@@ -83,3 +83,7 @@ myarray.length = 1
 const result = myarray.includes(5)
 
 console.log(result);
+
+///////////////////////////////////////////////////////////////
+
+
