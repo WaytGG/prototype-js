@@ -62,25 +62,25 @@ this.name
 this.authors = []
 this.addAuthor = function*/
 
-function Article(name, authors) {
+function Article(name,author) {
   this.name = name;
-  this.authors = authors;
-  this.addAuthor = function() {}; //переделать. надо дабавлять в массив авторов
-}
+  this.authors = [];
+  this.addAuthor = function() {
+    this.authors.push(author)
+  }
+};
 
-const testConst = new Article('Vanya', 'Автор');
-
+const testConst = new Article('Vanya', 'Pavel');
+testConst.addAuthor();
 console.log(testConst);
-testConst.addAuthor = 'AddTestAuthor'; 
 
 
 
 
 
-/* 6) вызвать функцию
-cat1.sayHi.call(cat2)
+/* 6) вызвать функцию cat1.sayHi.call(cat2)
 почему имя в консоли не взято от cat1 а принадлежит cat2 */
 
-cat1.sayHi.call(cat2); //В () передаем аргумент
+// cat1.sayHi.call(cat2); //В () передаем аргумент
 
 // MDN - Function.prototype.call() 
