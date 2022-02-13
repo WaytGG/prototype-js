@@ -27,10 +27,9 @@ console.log(arrCopy);
 /*3)используя оператор spread создайте новый массив из букв строки "тест строки как массива"
 (разбейте строку как массив)*/
 
-const str = 'тест строки как массива';
-const arrSpread = [...str];
+const str = [...'тест строки как массива'];
 
-console.log(arrSpread);
+console.log(str);
 
 
 
@@ -51,7 +50,7 @@ tel, email */
 
 const userObjPhone = {
   tel: '09333333',
-  email: 'email@gmai.com',
+  email: 'email@gmail.com',
 }
 
 
@@ -64,8 +63,6 @@ console.log(userResultObj);
 
 
 
-
-
 //Оператор Rest:
 // function (...myRestName) {}
 // function (firstParam, ...myRestName) {}
@@ -73,10 +70,40 @@ console.log(userResultObj);
 // (firstParam, ...myRestName) => {}
 
 /* 1) создайте функцию которая принимает неограниченное количество аргументов с помощью оператора rest параметров
-и логирует их массив в консоль
+и логирует их массив в консоль*/
 
-2) создайте функцию чтобы она принимала любое кол-во параметров:
+function restArg(...unlimitedArg) {
+  console.log(unlimitedArg);
+}
+
+restArg('test');
+
+
+/* 2) создайте функцию чтобы она принимала любое кол-во параметров:
 если в какой либо ячейке есть число то квадрат этого числа
-иначе если в какой либо ячейке есть строка то возвращала эту строку не изменяя
+иначе если в какой либо ячейке есть строка то возвращала эту строку не изменяя */
+/* 
+function paramPow (firstParam, ...param) {
+  if (typeof firstParam === 'number' || typeof param === 'number') {
+    const resultPow = Math.pow(firstParam,param)                              //Not working
+    return resultPow;
+  } if (typeof firstParam === 'string' || typeof param === 'string') {
+    return eval();
+  }
+}
 
-3) создайте функцию которая находит минимальное число из всех полученных аргументов */
+const resultPar = paramPow('a',4);
+console.log(resultPar);
+ */
+
+
+// 3) создайте функцию которая находит минимальное число из всех полученных аргументов 
+
+/* function minNum (...arg) {
+  const sumMin = Math.min(...arg);
+  return sumMin;
+};
+
+const minFunc = minNum(23, 9, 1, 22);
+
+console.log(minFunc); */
